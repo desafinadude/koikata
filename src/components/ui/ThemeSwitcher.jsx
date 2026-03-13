@@ -1,9 +1,9 @@
-import { Brush, Zap } from 'lucide-react'
+import { Cpu, Pencil } from 'lucide-react'
 import { THEMES } from '../../store/themeStore'
 
 const THEME_ICONS = {
-  comic:    Brush,
-  vaporware: Zap,
+  handdrawn: Pencil,
+  vaporwave: Cpu,
 }
 
 export default function ThemeSwitcher({ theme, setTheme }) {

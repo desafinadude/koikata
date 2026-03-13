@@ -1,9 +1,9 @@
 const STORAGE_KEY = 'koikata-theme'
-const DEFAULT_THEME = 'comic'
+const DEFAULT_THEME = 'handdrawn'
 
 export const THEMES = [
-  { id: 'comic',     label: 'Comic' },
-  { id: 'vaporware', label: 'Vaporware' },
+  { id: 'handdrawn', label: 'Hand-Drawn' },
+  { id: 'vaporwave', label: 'Vaporwave' },
 ]
 
 export function getStoredTheme() {
