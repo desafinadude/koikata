@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Safe area insets for PWA on mobile */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-base-100 text-base-content;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Comic theme overrides */
+[data-theme="comic"] .card {
+  border: 3px solid #1d1d1d;
+  box-shadow: 4px 4px 0 #1d1d1d;
+}
+
+/* Vaporware theme overrides */
+[data-theme="vaporware"] {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@layer utilities {
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
